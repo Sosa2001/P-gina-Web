@@ -37,7 +37,7 @@ body {
 }
 
 #header-text {
-    font-family: "Judson-Bold", Arial, Helvetica, sans-serif;
+    font-family: "Judson-Bold", cursive, sans-serif;
     background-color: rgba(223, 202, 8, 1);
     height: 70px;
     display: flex;
