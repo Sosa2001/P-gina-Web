@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+    <script src="JavaScript/app.js" defer></script>
+</head>
+<body>
+    <div id="header-container">
+        <img id="header-image1" src="Imágenes/UADY_logo.jpg" alt="Header Image">
+        <div id="sub-menu-container">
+            <a href="index.html">Laboratorio</a>
+            <a href="grupotrabajo.html">
+                <span class="first-line">Grupo de</span>
+                <span class="second-line">trabajo</span>
+            </a><a href="lineasinves.html">
+                <span class="first-line">Líneas de</span>
+                <span class="second-line">investigación</span>
+            </a>
+            <a href="publicaciones.html">Publicaciones</a>
+            
+            <a href="contacto.html">Contacto</a>
+        </div>
+        <img id="header-image2" src="Imágenes/thumbnail.jpg" alt="Header Image">
+    </div>
+    <div style="height: 140px;"></div>
+    <div id="header-text">
+        Contacto
+    </div>
+    <div id="image-container">
+        <div id="image-slider" onmouseenter="stopInterval()" onmouseleave="restartInterval()">
+            <img class="image" src="Imágenes/Hidrophonico 1.jpg" alt="Imagen 1">
+            <img class="image" src="Imágenes/Lab.jpg" alt="Imagen 2">
+            <img class="image" src="Imágenes/Prototipo 1.jpg" alt="Imagen 3">
+            <img class="image" src="Imágenes/Hidrophonico 3.jpg" alt="Imagen 4">
+            <img class="image" src="Imágenes/Prototipo 2.jpg" alt="Imagen 5">
+            <img class="image" src="Imágenes/Hidrophonico 2.jpg" alt="Imagen 6">
+            <img class="image" src="Imágenes/Prototipo 3.jpg" alt="Imagen 7">
+            <img class="image" src="Imágenes/Prototipo 4.jpg" alt="Imagen 8">
+            <img class="image" src="Imágenes/Ubicación.jpg" alt="Imagen 9">
+        </div>
+        <div id="indicators-container"></div>
+        <div class="arrow-container">
+            <div class="arrow" onclick="prevImage()">&#11164;</div>
+            <div class="arrow" onclick="nextImage()">&#11166;</div>
+        </div>
+    </div>
+    <div style="height: 75px;"></div>
+</body>
+</html>
