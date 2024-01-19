@@ -122,12 +122,12 @@ body {
     height: 10px;
     border-radius: 50%;
     background-color: #ccc;
-    margin: 0 5px;
+    margin: 0 6px;
     cursor: pointer;
 }
 
 .indicator.active {
-    background-color: #555;
+    background-color: #35353a;
 }
 
 .arrow-container {
@@ -140,13 +140,11 @@ body {
 }
 
 .arrow {
-    background-color: rgba(0, 0, 0, .7);
-    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 100%;
-    padding: 8px;
-    margin: 0 20px; /* Ajuste del margen aquí */
+    margin: 0 16px; /* Ajuste del margen aquí */
     cursor: pointer;
-    font-size: 24px;
+    font-size: 16px;
     width: 30px;
     height: 30px;
     display: flex;
@@ -156,7 +154,7 @@ body {
 }
 
 #Texto-descriptivo {
-    background-color: #002776;
+    background-color: #ffffff;
     max-width: 900px;
     margin: 0 auto;
     border-radius: 15px;
@@ -167,4 +165,35 @@ body {
     column-gap: 20px; 
     justify-content: center;
     align-items: center;
+}
+
+#Texto-descriptivo {
+    
+    background-color: #f0f0f0;
+    max-width: 1300px;
+    margin: 0 auto;
+    border-radius: 0px;
+    color: white;
+    text-align: justify;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between; /* Distribuir el espacio entre los elementos */
+}
+
+#Texto-izquierda {
+    flex: 1; /* Ocupar todo el espacio disponible */
+    margin: 10px;
+    border: 10px solid #ffffff;
+    color: black;
+    background-color: #ffffff;
+}
+
+#Texto-derecha {
+    flex: 4; /* Ocupar todo el espacio disponible */
+    background-color: #002776;
+    border: 10px solid #002776;
+    margin: 10px;
+    margin-left: 20px; /* Agrega un espacio entre las dos secciones */
+    overflow-y: auto; /* Agrega barra de desplazamiento vertical si es necesario */
+    max-height: 150px; /* Define la altura máxima deseada */
 }
