@@ -160,36 +160,24 @@ body {
 }
 
 #Texto-descriptivo {
-    background-color: #ffffff;
-    max-width: 900px;
-    margin: 0 auto;
-    border-radius: 15px;
-    color: white;
-    text-align: justify;
-    padding: 20px;
-    column-count: 2;  /* Agrega esta línea para dividir en dos columnas */
+    column-count: 3;
     column-gap: 20px; 
-    justify-content: center;
-    align-items: center;
-}
-
-#Texto-descriptivo {
-    
     background-color: #f0f0f0;
-    max-width: 1550px;
-    margin: 0 auto;
-    border-radius: 0px;
+    max-width: 1450px;
+    margin: 10px auto;
+    border-radius: 10px;
     color: white;
     text-align: justify;
     padding: 0px;
     display: flex;
+    align-items: center;
     justify-content: space-between; /* Distribuir el espacio entre los elementos */
 }
 
 #Texto-izquierda {
     border-radius: 8px;
-    flex: 2; /* Ocupar todo el espacio disponible */
-    margin: 10px;
+    padding: 0px 10px;
+    flex: 3; /* Ocupar todo el espacio disponible */
     border: 10px solid #ffffff;
     color: black;
     background-color: #ffffff;
@@ -198,22 +186,19 @@ body {
 
 #Texto-centro img{
     flex: 2; /* Ocupar todo el espacio disponible */
-    margin: 10px;
-    border: 10px solid #ffffff;
     color: black;
     background-color: #ffffff;
-    max-width: 90%;
+    max-width: 100%;
 }
 
 #Texto-derecha {
+    padding: 0px 10px 0px 0px;
     border-radius: 8px;
     flex: 2; /* Ocupar todo el espacio disponible */
     background-color: #00264e;
     border: 5px solid #00264e;
-    margin: 10px;
-    margin-left: 20px; /* Agrega un espacio entre las dos secciones */
     overflow-y: auto; /* Agrega barra de desplazamiento vertical si es necesario */
-    max-height: 400px; /* Define la altura máxima deseada */
+    max-height: 336px; /* Define la altura máxima deseada */
     min-width: 30%;
 }
 
