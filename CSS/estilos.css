@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: "Judson-Bold";
     src: url("../Fuentes/Judson-Bold.ttf") format("truetype");
@@ -38,7 +40,7 @@ body {
 
 #header-text {
     font-family: "Judson-Bold", cursive, sans-serif;
-    background-color: rgba(223, 202, 8, 1);
+    background-color: rgba(213, 159, 0, 1);
     height: 70px;
     display: flex;
     align-items: center;
@@ -46,6 +48,10 @@ body {
     font-size: 40px;
     color: black;
     font-weight: bold;
+}
+
+.center {
+    text-align: center;
 }
 
 #sub-menu-container {
@@ -71,15 +77,15 @@ body {
 }
 
 #sub-menu-container a:hover {
-    background-color:  #002776;
+    background-color:  #00264e;
 }
 
 #sub-menu-container a:nth-child(odd) {
-    background-color:  #002776;
+    background-color:  #00264e;
 }
 
 #sub-menu-container a:nth-child(even) {
-    background-color:  #002776;
+    background-color:  #00264e;
 }
 
 #image-container {
@@ -170,7 +176,7 @@ body {
 #Texto-descriptivo {
     
     background-color: #f0f0f0;
-    max-width: 1300px;
+    max-width: 1550px;
     margin: 0 auto;
     border-radius: 0px;
     color: white;
@@ -181,19 +187,38 @@ body {
 }
 
 #Texto-izquierda {
-    flex: 1; /* Ocupar todo el espacio disponible */
+    border-radius: 8px;
+    flex: 2; /* Ocupar todo el espacio disponible */
     margin: 10px;
     border: 10px solid #ffffff;
     color: black;
     background-color: #ffffff;
+    min-width: 30%;
+}
+
+#Texto-centro img{
+    flex: 2; /* Ocupar todo el espacio disponible */
+    margin: 10px;
+    border: 10px solid #ffffff;
+    color: black;
+    background-color: #ffffff;
+    max-width: 90%;
 }
 
 #Texto-derecha {
-    flex: 4; /* Ocupar todo el espacio disponible */
-    background-color: #002776;
-    border: 10px solid #002776;
+    border-radius: 8px;
+    flex: 2; /* Ocupar todo el espacio disponible */
+    background-color: #00264e;
+    border: 5px solid #00264e;
     margin: 10px;
     margin-left: 20px; /* Agrega un espacio entre las dos secciones */
     overflow-y: auto; /* Agrega barra de desplazamiento vertical si es necesario */
-    max-height: 150px; /* Define la altura máxima deseada */
+    max-height: 400px; /* Define la altura máxima deseada */
+    min-width: 30%;
+}
+
+#Texto-derecha li {
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+    line-height: 1.5; /* Ajusta el espacio vertical entre líneas */
+    padding-right: 15px; /* Ajusta el espacio antes del punto */
 }
