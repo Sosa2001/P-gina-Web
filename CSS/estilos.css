@@ -1,50 +1,46 @@
+
 @font-face {
     font-family: "Judson-Bold";
     src: url("../Fuentes/Judson-Bold.ttf") format("truetype");
 }
 
 body {
+    font-size: 1.2vw;
     margin: 0;
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
 }
 
+/*----El código de las siguientes lineas se usan en todas las secciones que se mencionan al inicio-----*/
+#header-container, #header-text , #sub-menu-container, #sub-menu-container a, .arrow  {
+    align-items: center;
+    justify-content: center;
+}
+
 #header-container {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 0; left: 0;
     height: 10vw;
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    background-color: white; 
-    z-index: 1000;
+    background-color: white;
+    z-index: 1; 
 }
 
+/*-------------El código de abajo es lo que tienen en comun las imágenes de UADY e INTEL---------------*/
 #header-image1, #header-image2 {
-    height: 10vw;
+    width: auto;
     object-fit: cover;
 }
 
 #header-image1 {
-    padding: 2.5vw;
+    padding: 2vw;
+    height: 8vw;
 }
 
-#header-text {
-    font-family: "Judson-Bold", cursive, sans-serif;
-    background-color: rgba(213, 159, 0, 1);
-    height: 5vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5vw;
-    color: black;
-    font-weight: bold;
-}
-
-.center {
-    text-align: center;
+#header-image2 {
+    height: 10vw;
 }
 
 #sub-menu-container {
@@ -52,38 +48,30 @@ body {
     display: flex;
     gap: 2.5vw;
     margin-right: 2.5vw;
-    align-items: center;
-    justify-content: center;
 }
 
 #sub-menu-container a {
-    font-size: 1vw;
-    height: 0.5vw;
+    height: 0.4vw;
     color: white;
     text-decoration: none;
-    padding: 2.5vw;
+    padding: 2vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     border-radius: 1.5vw;
     white-space: pre-wrap;
     font-weight: bold;
 }
 
-#sub-menu-container a:hover,
-#sub-menu-container a:nth-child(odd),
-#sub-menu-container a:nth-child(even) {
-    background-color: #00264e;
+#sub-menu-container a:hover, #sub-menu-container a:nth-child(odd), #sub-menu-container a:nth-child(even) {
+    background-color:  #00264e;
 }
 
 #image-container {
     position: relative;
     object-fit: cover;
-    width: auto;
-    height: auto;
+    width: auto; height: auto;
     overflow: hidden;
-    margin: 0;
+    margin: 0; /* Ajuste del margen aquí */
 }
 
 #image-slider {
@@ -92,9 +80,8 @@ body {
 }
 
 .image {
-    flex: 0 0 auto;
+    flex: auto; height: auto;
     width: 100vw;
-    height: auto;
     object-fit: cover;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -106,15 +93,14 @@ body {
 
 #indicators-container {
     position: absolute;
-    bottom: .1vw;
+    bottom: .2vw;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
 }
 
 .indicator {
-    width: 1vw;
-    height: 1vw;
+    width: 1vw; height: 1vw;
     border-radius: 50%;
     background-color: #ccc;
     margin: 0 1vw;
@@ -142,22 +128,24 @@ body {
 .arrow {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 100%;
-    margin: 0 1vw;
+    margin: 0 1vw; /* Ajuste del margen aquí */
     cursor: pointer;
-    width: 2vw;
-    height: 2vw;
     display: flex;
-    align-items: center;
-    justify-content: center;
     color: white;
 }
 
+#header-text {
+    font-family: "Judson-Bold", cursive, sans-serif;
+    background-color: rgba(213, 159, 0, 1);
+    height: 5vw;
+    display: flex;
+    font-size: 2.5vw;
+}
+
 #Texto-descriptivo {
-    font-size: 1vw;
     column-count: 3;
-    column-gap: 2.5vw;
-    background-color: #f0f0f0;
-    max-width: 80vw;
+    column-gap: 2.5vw; 
+    max-width: 90vw;
     margin: auto;
     border-radius: 1.5vw;
     color: white;
@@ -165,67 +153,62 @@ body {
     padding: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-#Texto-izquierda, #Texto-derecha {
-    border-radius: 1.5vw;
-    padding: 0 1.5vw;
-    align-self: stretch;
+    justify-content: space-between; /* Distribuir el espacio entre los elementos */
 }
 
 #Texto-izquierda {
-    border: 1vw solid #ffffff;
+    border-radius: 1vw;
+    padding: 0 1.5vw;
     color: black;
     background-color: #ffffff;
-    width: 30vw;
-}
-
-#Texto-centro img, #Texto-derecha {
-    background-color: #00264e;
+    width: 35vw;
+    align-self: stretch;
 }
 
 #Texto-centro img {
     width: 25vw;
-    max-width: 100vw;
-    height: auto;
 }
 
 #Texto-derecha {
+    padding: 0 1.5vw 0 0;
+    border-radius: 1vw;
+    background-color: #00264e;
     border: .5vw solid #00264e;
-    overflow-y: auto;
-    max-height: 25vw;
+    overflow-y: auto; /* Agrega barra de desplazamiento vertical si es necesario */
+    max-height: 25vw; /* Define la altura máxima deseada */
     width: 30vw;
+    align-self: stretch;
 }
 
 #Texto-derecha li {
-    margin-bottom: .5vw;
-    line-height: 1.5;
-    padding-right: .5vw;
+    line-height: 1.5; /* Ajusta el espacio vertical entre líneas */
+    padding-right: none; /* Ajusta el espacio antes del punto */
 }
 
-#contenidoLista {
-    text-align: justify;
+#titulo-noticias {
+    background-color: #00264e; /* Color de fondo para resaltar el título */
+    position: sticky; /* Hace que el título se quede pegado al desplazarse */
+    top: 0; /* Posiciona el título en la parte superior del contenedor */
+    padding: 0.5vw;
+    text-align: center;
+}
+
+
+/*-----------------------------------------Publicaciones---------------------------------------------------------------*/
+#Publicaciones, #Capitulos {
+    border: 0.05vw solid #ccc; /* Borde de 1 píxel de color gris claro */
+    padding: 0.5vw; /* Margen interno de 10 píxeles */
+    margin-bottom: 1vw; /* Margen inferior de 20 píxeles para separar los bloques */
 }
 
 li a {
     color: #1a5bbc;
 }
 
-#titulo-noticias {
-    background-color: #00264e;
-    position: sticky;
-    top: 0;
-    padding: 0.05vw;
-}
-
-#Publicaciones, #Capitulos {
-    border: 0.05vw solid #ccc;
-    padding: 0.5vw;
-    margin-bottom: 1vw;
-}
-
 li {
-    font-size: 1vw;
-    margin-bottom: 1vw;
+    margin-bottom: .5vw; /* Ajusta el valor según el espacio que desees entre elementos */
+  }
+
+#contenidoLista {
+    text-align: justify;
 }
