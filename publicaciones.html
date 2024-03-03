@@ -5,9 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publicaciones</title>
     <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="JavaScript/app.js" defer></script>
+    <script>
+        $(document).ready(function() {
+            // Cargar el contenido de la lista de capítulos
+            $("#Publicaciones").load("Publicaciones/Publicaciones.html");
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            // Cargar el contenido de la lista de capítulos
+            $("#Capitulos").load("Publicaciones/Capitulos_Libros.html");
+        });
+    </script>
 </head>
-<body>
+<body style="background-color: white;">
     <div id="header-container">
         <img id="header-image1" src="Imágenes/UADY_logo.jpg" alt="Header Image">
         <div id="sub-menu-container">
@@ -29,14 +42,15 @@
     <div id="header-text">
         Publicaciones
     </div>
-    <div>
-
-        <div style="height: 140px;"></div>
-        <div id="header-text">
-            Página en construcción... 
-            Por su comprensión gracias
-        </div>
+    <div style="max-width: 900px; margin: auto; text-align: justify; background-color: whitesmoke; padding: 20px; list-style-type: none">
         
+        <div id="Publicaciones"></div>
+
+        <div id="header-text" style="border-radius: 15px;">
+            Capítulos de libros
+        </div>
+        <div style="height: 10px;"></div>
+        <div id="Capitulos"></div>        
     </div>
 </body>
 </html>
