@@ -224,6 +224,62 @@ body {
 }
 /*----------------------------------------------------------------------------------------------------------------------------*/
 
+
+/*-------------------------------------------------Grupo de trabajo-----------------------------------------------------------*/
+#contenedor-personas-GrupoTrabajo {
+    padding: 2vw;
+    max-width: 66vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    background-color: white;
+    border-radius: 1vw;
+}
+
+.persona-GrupoTrabajo {
+    width: 17vw;
+    padding: 1vw;
+    background-color: rgba(213, 159, 0, 1);
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 1vw;
+}
+
+.persona-GrupoTrabajo:hover {
+    transform: scale(1.05);
+}
+
+.persona-GrupoTrabajo img {
+    width: 100%;
+    height: auto;
+    border-radius: .5vw;
+}
+
+.persona-GrupoTrabajo p {
+    margin-top: 1vw;
+    text-align: center;
+    font-weight: bold;
+}
+  
+#header-text-GrupoTrabajo {
+    max-width: 70vw;
+    color: white;
+    margin: auto;
+    border-radius: 1.5vw;
+    font-family: "Judson-Bold", cursive, sans-serif;
+    background-color: #00264e;
+    height: 5vw;
+    display: flex;
+    font-size: 2.5vw;
+    align-items: center;
+    justify-content: center;
+}
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+
 /*--------------------------------------------------Publicaciones-------------------------------------------------------------*/
 #Publicaciones, #Capitulos {
     border: 0.05vw solid #ccc; /* Borde de 1 píxel de color gris claro */
@@ -240,11 +296,11 @@ li {
 }
 
 #Publicaciones-Capitulos{
-    max-width: 900px;
+    max-width: 70vw;
     margin: auto;
     text-align: justify;
     background-color: whitesmoke;
-    padding: 20px;
+    padding: 1.5vw;
     list-style-type: none;
     text-decoration: none;
 }
@@ -287,7 +343,7 @@ footer {
   
   .enlace {
     flex-grow: 1;
-    padding: 20px;
+    padding: 1.5vw;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease;

@@ -1,5 +1,5 @@
-// app.js
 
+/*----------------------------------------------Carrusel de imagenes---------------------------------------------------------*/
 let currentIndex = 0;
 const slider = document.getElementById('image-slider');
 const images = document.querySelectorAll('.image');
@@ -70,3 +70,11 @@ function stopInterval() {
 
 createIndicators(); // Llamado para crear los indicadores al inicio
 intervalId = setInterval(nextImage, 5000);
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------Grupo de trabajo----------------------------------------------------------*/
+function redireccionar(pagina) {
+    window.location.href = pagina;
+  }
+/*---------------------------------------------------------------------------------------------------------------------------*/
