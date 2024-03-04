@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laboratorio de Industria y Robótica 4.0</title>
+    <title>Laboratorio de Robótica e Industria 4.0</title>
     <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
     <script src="JavaScript/app.js" defer></script>
 </head>
 <body>
+    <!------------------------------------------------Menu de opciones------------------------------------------------------------>
     <div id="header-container">
         <img id="header-image1" src="Imágenes/UADY_logo.jpg" alt="Header Image">
         <div id="sub-menu-container">
@@ -26,8 +27,9 @@
         <img id="header-image2" src="Imágenes/thumbnail.jpg" alt="Header Image">
     </div>
     <div style="height: 10vw;"></div>
+    <!-------------------------------------------------Carrusel de imagenes--------------------------------------------------------->
     <div id="header-text">
-        Laboratorio de industria y robótica 4.0
+        Laboratorio de robótica e industria 4.0
     </div>
     <div id="image-container">
         <div id="image-slider" onmouseenter="stopInterval()" onmouseleave="restartInterval()">
@@ -45,17 +47,23 @@
             <div class="arrow" onclick="nextImage()">
                 <img src="Imágenes/next.png" alt="next">
             </div>
-        </div>
-        
+        </div>   
     </div>
+
+    <!---------------------------------Descripción lab, imagen, noticias------------------------------------------------------------->
     <div style="height: 2vw;"></div>
     <div id="Texto-descriptivo">
         <div id="Texto-izquierda">
-            <div style="text-align: center;">
+            <div id="Titulos">
                 <h2>Acerca del Laboratorio:</h2>
             </div>
-            <p>El Laboratorio de Robótica e Industria 4.0, ubicado en la Facultad de Ingeniería de la Universidad Autónoma de Yucatán tiene como misión crear sistemas innovadores que integren tecnologías de vanguardia como fuentes energéticas alternativas, materiales nanoestructurados, redes de sensores inalámbricos, circuitos harvester e inteligencia artificial. Nuestras áreas de aplicación abarcan el monitoreo de salud estructural, agricultura de precisión, robótica y medicina de precisión, entre otras.
-               En esta página web encontrará información sobre nuestro equipo de trabajo, líneas de investigación, publicaciones y noticias relevantes. El Dr. Alejandro Castillo Atoche es el responsable del laboratorio.
+            <p>El Laboratorio de Robótica e Industria 4.0, ubicado en la Facultad de Ingeniería de la Universidad 
+               Autónoma de Yucatán tiene como misión crear sistemas innovadores que integren tecnologías de vanguardia 
+               como fuentes energéticas alternativas, materiales nanoestructurados, redes de sensores inalámbricos, circuitos 
+               harvester e inteligencia artificial. Nuestras áreas de aplicación abarcan el monitoreo de salud estructural, 
+               agricultura de precisión, robótica y medicina de precisión, entre otras.
+               En esta página web encontrará información sobre nuestro equipo de trabajo, líneas de investigación, 
+               publicaciones y noticias relevantes. El Dr. Alejandro Castillo Atoche es el responsable del laboratorio.
             </p>
         </div>
 
@@ -65,7 +73,7 @@
 
         <div id="Texto-derecha">
             <div id="titulo-noticias">
-                <h2 class="center">Noticias</h2>
+                <h2>Noticias</h2>
             </div>
             <ul>
                 <li>Creación y lanzamiento de la página oficial del Laboratorio de industria y Robótica  - Febrero 25, 2024.</li>
@@ -75,14 +83,49 @@
             </ul>
         </div>
     </div>
-    
-    <div style="height: 2vw;"></div>
+    <<div style="height: 2vw;"></div>>
+    <!----------------------------------------------Video y descripción-------------------------------------------------------->
     <div id="header-text">
         Multimedia
     </div>
+    <div style="height: 1vw;"></div>
+    <div id="Texto-Video">
+        <div>
+            <h2>Proyecto: 
+                Algoritmo inteligente de autoajuste para optimización energética en sistemas hidropónicos IoT <br>
+            </h2>
+            <h3>
+                <br>
+                Descripción:
+            </h3>
+        </div>
+        <p>En este proyecto se presenta una aplicación de la optimización energética en sistemas hidropónicos 
+            IoT con impacto para el escalamiento de cultivos verticales, en nuevos esquemas de Agricultura de 
+            Precisión e Industria 4.0
+        </p>
+        <div style="height: 1vw;"></div>
+    <div class="video-container">
+        <video id="videoPersonalizado" controls>
+            <source src="/Videos/Sistemas Hidropónicos.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div style="height: 1vw;"></div>
+    </div>
 
 
+    <!----------------------------------------------Pie de página------------------------------------------------------>
     <div style="height: 2vw;"></div>
-
+    <footer>
+        <a href="https://www.ingenieria.uady.mx/index.php" class="enlace">
+            Facultad de Ingeniería
+        </a>
+        <a href="https://www.ingenieria.uady.mx/academicos_licen_mecatronica_mefi_2018_fi.php" class="enlace">
+            Departamento de Mecatrónica
+        </a>
+        <a href="https://www.ingenieria.uady.mx/posgrado_maestria_fi.php" class="enlace">
+            Posgrado
+        </a>
+    </footer>
 </body>
 </html>

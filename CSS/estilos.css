@@ -11,12 +11,12 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/*----El código de las siguientes lineas se usan en todas las secciones que se mencionan al inicio-----*/
+/*----Se usan en todas las secciones que se mencionan-----*/
 #header-container, #header-text , #sub-menu-container, #sub-menu-container a, .arrow  {
     align-items: center;
     justify-content: center;
 }
-
+/*------------------------------------------------Menu de opciones general------------------------------------------------*/
 #header-container {
     position: fixed;
     top: 0; left: 0;
@@ -28,7 +28,7 @@ body {
     z-index: 1; 
 }
 
-/*-------------El código de abajo es lo que tienen en comun las imágenes de UADY e INTEL---------------*/
+/*---Tienen en comun las imágenes de UADY e INTEL---*/
 #header-image1, #header-image2 {
     width: auto;
     object-fit: cover;
@@ -65,7 +65,9 @@ body {
 #sub-menu-container a:hover, #sub-menu-container a:nth-child(odd), #sub-menu-container a:nth-child(even) {
     background-color:  #00264e;
 }
+/*----------------------------------------------------------------------------------------------------------------------------------*/
 
+/*-----------------------------------------------------Carrusel de imagenes---------------------------------------------------------*/
 #image-container {
     position: relative;
     object-fit: cover;
@@ -133,6 +135,7 @@ body {
     display: flex;
     color: white;
 }
+/*------------------------------------------------------------------------------------------------------------------------------*/
 
 #header-text {
     font-family: "Judson-Bold", cursive, sans-serif;
@@ -140,6 +143,10 @@ body {
     height: 5vw;
     display: flex;
     font-size: 2.5vw;
+}
+/*-----------------------------------------Descripción, imagen y noticias------------------------------------------------------*/
+#Titulos{
+    text-align: center;
 }
 
 #Texto-descriptivo {
@@ -192,17 +199,36 @@ body {
     padding: 0.5vw;
     text-align: center;
 }
+/*------------------------------------------------------------------------------------------------------------------------------*/
 
+/*-----------------------------------------------Video y descripción------------------------------------------------------------*/
+#Texto-Video {
+    text-align: justify;
+    max-width: 50vw;
+    border-radius: 1vw;
+    background-color: white;
+    color: black;
+    font-size: 1.2vw;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-/*-----------------------------------------Publicaciones---------------------------------------------------------------*/
+.video-container {
+    text-align: center;
+}
+
+#videoPersonalizado {
+    margin: 0 auto;
+    max-width: 40vw;
+    height: auto;
+}
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------Publicaciones-------------------------------------------------------------*/
 #Publicaciones, #Capitulos {
     border: 0.05vw solid #ccc; /* Borde de 1 píxel de color gris claro */
     padding: 0.5vw; /* Margen interno de 10 píxeles */
     margin-bottom: 1vw; /* Margen inferior de 20 píxeles para separar los bloques */
-}
-
-li a {
-    color: #1a5bbc;
 }
 
 li {
@@ -212,3 +238,64 @@ li {
 #contenidoLista {
     text-align: justify;
 }
+
+#Publicaciones-Capitulos{
+    max-width: 900px;
+    margin: auto;
+    text-align: justify;
+    background-color: whitesmoke;
+    padding: 20px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/*----------------------------------------------------Contacto----------------------------------------------------------------*/
+#Plantilla-Contacto{
+    max-width: 70vw;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+#Texto-Contacto{
+    max-width: 42vw;
+    text-align: justify;
+    margin: auto;
+    color: black;
+    padding: 5vw;
+}
+
+#ubicacion {
+    border: 0;
+    width: 40vw;
+    height: 27.5vw;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+
+}
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------Pie de página-------------------------------------------------------------*/
+footer {
+    display: flex;
+    background-color: #00264e;
+    color: rgba(213, 159, 0, 1);
+    text-decoration: none;
+  }
+  
+  .enlace {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: rgba(213, 159, 0, 1);
+  }
+
+  .enlace:hover{
+    background-color: black;
+  }
+  /*----------------------------------------------------------------------------------------------------------------------------*/
