@@ -232,11 +232,12 @@ body {
     border-radius: 1vw;
     padding: 0.5vw;
     text-align: center;
+    justify-content: center;
 }
 /*--------------------------Una columna--------------------------------*/
 #videoPersonalizado2 {
     margin: auto;
-    min-width: 60vw;
+    width: 60vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -286,9 +287,59 @@ body {
     width: 40vw;
 }
 
+/*----------------------------------------------------------------------------------------------------------------------------*/
 
+/*-------------------------------------------------Líneas de investigación----------------------------------------------------*/
+.header-Proyecto {
+    font-family: "Judson-Bold", cursive, sans-serif;
+    color: white;
+    background-color: #00264e;
+    height: auto;
+    width: 75vw;
+    display: flex;
+    font-size: 2.5vw;
+    margin: auto;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    text-align: center;
+    justify-content: center;
+}
 
+.Texto-Foto {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    width: 87vw;
+    text-align: justify;
+    background-color: white;
+    color: black;
+    font-size: 1.2vw;
+    margin: 0 auto;
+    padding: 1.5vw;
+    border-radius: 1vw;
+}
 
+.Image-Linea img {
+    width: 35vw;
+    height: 100%;
+}
+
+.Texto-Linea {
+    width: 50vw;
+    padding: 2vw;
+}
+
+#Bottom-FPGA{
+    background-color: black;
+    color: white;
+    border-radius: 1vw;
+    max-width: 25vw;
+    text-align: center;
+    margin: auto;
+    padding: 1vw;
+    font-size: 1.5vw;
+}
 /*----------------------------------------------------------------------------------------------------------------------------*/
 
 
