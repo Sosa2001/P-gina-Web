@@ -78,3 +78,55 @@ function redireccionar(pagina) {
     window.location.href = pagina;
   }
 /*---------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------Videos index----------------------------------------------------------*/
+document.addEventListener('DOMContentLoaded', function() {
+    var videos = document.querySelectorAll('video');
+  
+    videos.forEach(function(video) {
+      var previewTime = parseInt(video.dataset.previewTime);
+      var firstPlay = true; // Bandera para controlar la primera reproducción
+  
+      if (!isNaN(previewTime)) {
+        video.addEventListener('loadedmetadata', function() {
+          video.currentTime = previewTime;
+        });
+  
+        video.addEventListener('seeked', function() {
+          var canvas = document.createElement('canvas');
+          var ctx = canvas.getContext('2d');
+          canvas.width = video.videoWidth;
+          canvas.height = video.videoHeight;
+          ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+          video.nextElementSibling.style.backgroundImage = 'url(' + canvas.toDataURL() + ')';
+        });
+  
+        // Agregamos un evento de clic para pausar/reproducir el video solo cuando se hace clic en la vista previa
+        video.nextElementSibling.addEventListener('click', function(event) {
+          event.stopPropagation(); // Evita que el clic se propague al video
+  
+          if (firstPlay) {
+            video.currentTime = 0; // Reproduce desde el inicio la primera vez
+            firstPlay = false; // Actualiza la bandera
+          }
+  
+          if (video.paused) {
+            video.play();
+          } else {
+            video.pause();
+          }
+        });
+  
+        // Agregamos un evento para controlar la primera reproducción cuando se presiona el botón de reproducción del video
+        video.addEventListener('play', function() {
+          if (firstPlay) {
+            video.currentTime = 0; // Reproduce desde el inicio la primera vez
+            firstPlay = false; // Actualiza la bandera
+          }
+        });
+      }
+    });
+  });
+  
+/*---------------------------------------------------------------------------------------------------------------------------*/
