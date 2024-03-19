@@ -9,6 +9,9 @@ body {
     margin: 0;
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 /*-------------------------------------------------Grupo de trabajo-----------------------------------------------------------*/
 #header-text {
@@ -30,7 +33,7 @@ body {
     display: flex;
     max-width: 62vw;
     margin: auto;
-    padding: 4vw;
+    padding: 2vw;
     background-color: white;
     color: black;
     text-align: justify;
@@ -42,11 +45,11 @@ body {
 .Contenedor-Imagen img {
     width: 20vw;
     height: auto;
-    padding: 2vw;
+    padding: 1vw;
 }
 
 #Parrafos {
-    padding: 4vw;
+    padding: 2vw;
     max-width: 62vw;
     margin: 0 auto;
     text-align: justify;
@@ -59,7 +62,7 @@ body {
 }
 
 #Biografía {
-    padding: 4vw;
+    padding: 2vw;
     max-width: 62vw;
     margin: 0 auto;
     text-align: justify;
@@ -72,15 +75,18 @@ body {
 
   /*--------------------------------------------------Pie de página-------------------------------------------------------------*/
 footer {
+    position: relative;
+    bottom: 0;
     display: flex;
     background-color: #00264e;
     color: rgba(213, 159, 0, 1);
     text-decoration: none;
+    margin-top: auto;
   }
   
   .enlace {
     flex-grow: 1;
-    padding: 1.5vw;
+    padding: 2vw;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
